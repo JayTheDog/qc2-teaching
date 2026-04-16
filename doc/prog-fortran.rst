@@ -615,7 +615,7 @@ it is not that accurate
       .. code-block:: bash
    
          gfortran accuracy.f90 -o accuracy_test
-         ./accuracy.test
+         ./accuracy_test
           a is   1.00000000
           b is   6.00000000
           c is  0.166666672
