@@ -22,7 +22,7 @@ Windows
 There are multiple ways to enable your Windows (10 or higher) system for development.
 For this course we will present two methods, either running natively
 (see :ref:`msys2`) or with a virtualisation of a Linux subsystem (see :ref:`wsl`).
-
+We heavily recommend the Linux subsystem (:ref:`wsl`).
 
 .. _msys2:
 
@@ -109,12 +109,15 @@ Your new console will now show ``linuxusername@hostname:/some/path$``, similar t
 an Ubuntu console. ``linuxusername`` is your chosen username in the Linux distribution
 and ``hostname`` the name of your computer. The directory in which the window is
 opened (``/some/path``) will probably be your Linux home directory ``~`` (see
-:ref:`Shell in a nutshell`). Note that this home directory can not simply be accessed
-via the Windows explorer. But the other way around, you can find your Windows home
-directory in ``/mnt/c/Users/windowsusername``, where ``windowsusername`` is your
-username on your Windows computer. If you want to open new files with some Windows
-program, we recommend to create and save all new files in the mentioned directory
-or subfolders of it.
+:ref:`Shell in a nutshell`).
+
+.. note::
+
+   In current WSL versions, the Linux home directory can be accessed directly from 
+   the Windows File Explorer by clicking on Linux in the Navigation pane,
+   then `/home/<username>` or via `\\wsl$\<distribution-name>\home\<username>`.
+   Equally, your Windows home directory is usually available inside WSL under 
+   `/mnt/c/Users/<windowsusername>`.
 
 You can now also access your Linux console through a Windows console such as CMD.
 To open CMD, just type ``cmd`` in the search field of the Windows taskbar and press
